@@ -41,8 +41,7 @@ window.__vite_plugin_react_preamble_installed__ = true
     <link href="./Memories of Love - Tara_files/css2" rel="stylesheet">
     <link href="./Memories of Love - Tara_files/all.min.css" rel="stylesheet">
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2936959914646533"
-     crossorigin="anonymous"></script>
+   
     <script type="module">"use strict";(()=>{var P="0.2.8";var T={HIGHLIGHT_COLOR:"#0079F2",HIGHLIGHT_BG:"#0079F210",ALLOWED_DOMAIN:".replit.dev"},Q=`
   [contenteditable] {
     outline: none !important;
@@ -3834,6 +3833,32 @@ img {
 [data-side=right] .\[\[data-side\=right\]_\&\]\:cursor-e-resize{
   cursor: e-resize;
 }
+
+<button id="listenButton">Listen the ❤️</button>
+
+<div id="playerContainer" style="margin-top: 20px;">
+  <!-- The player will be injected here -->
+</div>
+
+<script>
+  document.getElementById("listenButton").addEventListener("click", function() {
+    const container = document.getElementById("playerContainer");
+    if (!container.innerHTML) {
+      container.innerHTML = `
+        <iframe 
+          src="https://mewtru.com/mixtape/playback?v=qpIdoaaPa6U%2CztltXpAz1HE%2CFudfVyYWNxQ%2CKGn-erOG-Bs%2Cp93O-umBg98&to=Taraaa" 
+          width="100%" 
+          height="200" 
+          style="border:none;"
+          allow="autoplay"
+        ></iframe>
+      `;
+    }
+    container.scrollIntoView({ behavior: "smooth" });
+  });
+</script>
+
+
 </style></head>
   <body style="padding-top: 0px;">
     <div id="root"><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;"><ol tabindex="-1" data-replit-metadata="client/src/components/ui/toaster.tsx:30:6" data-component-name="ToastViewport" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol></div><div data-replit-metadata="client/src/pages/gallery.tsx:78:4" data-component-name="motion.div" class="min-h-screen bg-gradient-to-br from-romantic-pink via-soft-white to-rose-gold" data-testid="gallery-page" style="opacity: 1;"><header data-replit-metadata="client/src/pages/gallery.tsx:86:6" data-component-name="header" class="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-md border-b border-pink-200"><div data-replit-metadata="client/src/pages/gallery.tsx:87:8" data-component-name="div" class="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"><div data-replit-metadata="client/src/pages/gallery.tsx:88:10" data-component-name="div" class="flex items-center space-x-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart text-deep-romantic text-2xl animate-pulse-heart fill-current" data-replit-metadata="client/src/pages/gallery.tsx:89:12" data-component-name="Heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg><h1 data-replit-metadata="client/src/pages/gallery.tsx:90:12" data-component-name="h1" class="font-romantic text-2xl text-deep-romantic" data-testid="text-gallery-title">Tara's Memories</h1></div><div data-replit-metadata="client/src/components/music-player.tsx:45:4" data-component-name="div" class="flex items-center space-x-4" data-testid="music-player"><button data-replit-metadata="client/src/components/music-player.tsx:46:6" data-component-name="Button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent h-9 rounded-md px-3 text-deep-romantic hover:text-rose-gold transition-colors" data-testid="button-previous-song"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-skip-back h-4 w-4" data-replit-metadata="client/src/components/music-player.tsx:53:8" data-component-name="SkipBack"><polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" x2="5" y1="19" y2="5"></line></svg></button><button data-replit-metadata="client/src/components/music-player.tsx:56:6" data-component-name="Button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 bg-deep-romantic text-white hover:bg-rose-gold transition-all duration-300 rounded-full p-3" data-testid="button-play-pause"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pause h-5 w-5" data-replit-metadata="client/src/components/music-player.tsx:62:8" data-component-name="Pause"><rect x="14" y="4" width="4" height="16" rx="1"></rect><rect x="6" y="4" width="4" height="16" rx="1"></rect></svg></button><button data-replit-metadata="client/src/components/music-player.tsx:68:6" data-component-name="Button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent h-9 rounded-md px-3 text-deep-romantic hover:text-rose-gold transition-colors" data-testid="button-next-song"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-skip-forward h-4 w-4" data-replit-metadata="client/src/components/music-player.tsx:75:8" data-component-name="SkipForward"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" x2="19" y1="5" y2="19"></line></svg></button><div data-replit-metadata="client/src/components/music-player.tsx:78:6" data-component-name="div" class="text-sm text-deep-romantic font-medium flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music h-4 w-4" data-replit-metadata="client/src/components/music-player.tsx:79:8" data-component-name="Music"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg><span data-replit-metadata="client/src/components/music-player.tsx:80:8" data-component-name="span" data-testid="text-current-song">Now Playing: Tum Hi Ho</span></div><div data-replit-metadata="client/src/components/music-player.tsx:87:6" data-component-name="div" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 pointer-events-none"><div data-replit-metadata="client/src/components/music-player.tsx:88:10" data-component-name="div" class="text-deep-romantic text-2xl animate-bounce"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music" data-replit-metadata="client/src/components/music-player.tsx:89:12" data-component-name="Music"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg></div></div><audio data-replit-metadata="client/src/components/music-player.tsx:95:6" data-component-name="audio" preload="none" data-testid="audio-player" class="hidden"></audio></div></div></header><main data-replit-metadata="client/src/pages/gallery.tsx:109:6" data-component-name="main" class="pt-32 pb-12 px-6"><div data-replit-metadata="client/src/pages/gallery.tsx:110:8" data-component-name="div" class="container mx-auto max-w-6xl"><div data-replit-metadata="client/src/pages/gallery.tsx:113:10" data-component-name="motion.div" class="text-center mb-16" style="opacity: 1; transform: none;"><h2 data-replit-metadata="client/src/pages/gallery.tsx:119:12" data-component-name="h2" class="font-romantic text-5xl md:text-6xl text-deep-romantic mb-6" data-testid="text-welcome-title">Empathy in Action — A Future Nurse’s Promise 💉❤️✨
@@ -3862,9 +3887,4 @@ Because being a nurse isn’t just about what you do — it’s about who you ar
     <div class="banner-text">
       This is a temporary development preview, and these links are not for public use. <a href="https://docs.replit.com/category/replit-deployments" target="_blank" class="banner-link">Deploy your app</a> for secure sharing or use an invite link.
     </div>
-    <button class="banner-close" aria-label="Close banner">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 0 1 0-1.414z"></path>
-      </svg>
-    </button>
   </div></body></html>
